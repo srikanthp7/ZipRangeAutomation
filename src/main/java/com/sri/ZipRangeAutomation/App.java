@@ -19,10 +19,11 @@ public class App
 	public static void main( String[] args )
     {
 		int j=0;
-//    	String[] zipRange = {"[94133,94193]","[94200,94299]","[94600,94699]"}; 
-		String[] zipRange ={"[49679,52015]","[49800,50000]", "[51500,53479]", "[45012,46937]","[54012,59607]"};//,"[45500,45590]", "[45999,47900]","[44000,45000]","[43012,45950]"};
+    	String[] zipRange = {"[94133,94133]","[94200,94709]","[94600,94699]"}; 
+	//	String[] zipRange ={"[49679,52015]","[49800,50000]", "[51500,53479]", "[45012,46937]","[54012,59607]","[45500,45590]", "[45999,47900]","[44000,45000]","[43012,45950]"};
     	ArrayList<Integer> output = new ArrayList<Integer>();
         System.out.println( "Hello World!" );
+        Arrays.sort(zipRange);
         int[] zipArray = new int[zipRange.length * 2];
         for (int i = 0; i < zipRange.length; i++) {
         	zipArray[j] = Integer.parseInt( zipRange[i].substring(1, 6));
