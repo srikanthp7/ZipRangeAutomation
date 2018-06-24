@@ -87,11 +87,9 @@ public class BuildOutputZipRange {
 		String[] outputArray = new String[output.size() / 2];
 		int j=0;
 		for (int k = 0; k < output.size()/2 ; k++) {
-			String s;
 			outputArray[k] = "[" + output.get(j) + "," ;
-			j=j+1;
-			outputArray[k]  = outputArray[k] + output.get(j) + "]" ;
-			j=j+1;
+			outputArray[k]  = outputArray[k] + output.get(++j) + "]" ;
+			j++;
 		}
 		return outputArray;
 		
