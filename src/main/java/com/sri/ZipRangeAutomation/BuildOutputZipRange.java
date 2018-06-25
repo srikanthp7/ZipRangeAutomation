@@ -3,9 +3,9 @@ package com.sri.ZipRangeAutomation;
 import java.util.ArrayList;
 
 public class BuildOutputZipRange {
-	int[] zipArray;
-	int lowerBound,upperBound;
-	ArrayList<Integer> output = new ArrayList<Integer>();
+	private int[] zipArray;
+	private int lowerBound,upperBound;
+	private ArrayList<Integer> output = new ArrayList<Integer>();
 	public BuildOutputZipRange(int[] zipArray) {
 		this.zipArray=zipArray;
 	}

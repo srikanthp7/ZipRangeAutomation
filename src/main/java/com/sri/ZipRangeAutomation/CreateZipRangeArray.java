@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CreateZipRangeArray {
 	
-	String[] zipRange;
+	private String[] zipRange;
 	public CreateZipRangeArray(String[] zipRange)
 	{
 		this.zipRange= zipRange;
