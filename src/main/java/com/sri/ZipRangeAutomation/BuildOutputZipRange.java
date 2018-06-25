@@ -2,13 +2,26 @@ package com.sri.ZipRangeAutomation;
 
 import java.util.ArrayList;
 
+/**
+ * This class builds the required output zipcode range
+ * @author SPodishe
+ *
+ */
 public class BuildOutputZipRange {
 	private int[] zipArray;
 	private int lowerBound,upperBound;
 	private ArrayList<Integer> output = new ArrayList<Integer>();
+	/**
+	 * @param zipArray
+	 */
 	public BuildOutputZipRange(int[] zipArray) {
 		this.zipArray=zipArray;
 	}
+	/**
+	 * this function is used to produce the minimum number of zipcode ranges for the given input ranges
+	 * this function in turn calls constructOutputArray to generate the expected output
+	 * @return the string array with zipcode ranges
+	 * */ 
 	public String[] buildOutput()
 	{
 		lowerBound= zipArray[0];
@@ -81,6 +94,13 @@ public class BuildOutputZipRange {
 	return constructOutputArray(output);
 		 
 	}
+	
+	/**
+	 * This function constructs the expected string array from the given integer array.
+	 * @param ArrayList of zipcodes
+	 * @return string array with zipcode ranges
+	 * {[94133,94133] [94200,94299] [94600,94699]}
+	 * */
 	
 	public String[] constructOutputArray(ArrayList output)
 	{
